@@ -22,10 +22,15 @@ INSERT INTO books (name, author, publisher, cover, isbn, year) VALUES
 CREATE TABLE mybooks (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-     cover VARCHAR(255) NOT NULL
+     cover VARCHAR(255) NOT NULL,
+  "book_id" int NOT NULL
 );
-INSERT INTO mybooks (name, cover) VALUES
-('Ecce Homo', 'img');
+
+INSERT INTO mybooks (name, cover,"book_id") VALUES
+('Ecce Homo', 'img' ,1);
+
+
+ALTER TABLE "mybooks" ADD FOREIGN KEY ("book_id") REFERENCES "books" ("id");
 
 
 
