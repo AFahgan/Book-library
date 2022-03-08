@@ -16,8 +16,10 @@
   },
   "scripts": {
     "test": "jest",
+
     "start": "NODE_ENV=production node src/index.js",
     "dev": "NODE_ENV=dev nodemon src/index.js"
+
     
   },
   "repository": {
