@@ -17,7 +17,7 @@
   "scripts": {
     "test": "jest",
     "start": "node src/index.js",
-    "dev": "NODE_ENV=dev nodemon src/index.js"
+    "dev": "nodemon src/index.js"
     
   },
   "repository": {
