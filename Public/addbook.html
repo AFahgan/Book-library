@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <nav>
+        <div class="nav">
+            <a class="logo" href="addbook.html">Add Book</a>
+
+            <div class="btnlk">
+
+                <a href="./index.html"><button>Home</button></a>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+
+    <section class="add-book">
+        <form action="/addbook" class="form" id="add-book-form" method="post">
+            <label class="input-label" for="name">Book Name: </label>
+            <input placeholder="Enter Book Name" required pattern="[A-Za-z]{3,30}"
+                title="Enter Book Name" class="input" id="name" name="name" type="text" />
+            <label class="input-label" for="age">Book Author:</label>
+            <input placeholder="Enter Book Author" required pattern="[A-Za-z]{3,30}"
+            title="Enter Book Author" class="input" id="name" name="name" type="text" />
+            <label class="input-label" for="age">Book Publisher:</label>
+            <input placeholder="Enter Book Publisher" required pattern="[A-Za-z]{3,30}"
+            title="Enter Book Publisher" class="input" id="name" name="name" type="text" />
+            <label class="input-label" for="age">Book Cover Link:</label>
+            <input placeholder="Enter Book Publisher" required pattern="[A-Za-z]{3,30}"
+            title="Enter Book Cover Link" class="input" id="name" name="url" type="text" />
+            <label class="input-label" for="age">Book ISBN:</label>
+            <input placeholder="Enter Book ISBN" required pattern="[A-Za-z]{3,30}"
+            title="Enter Book ISBN" class="input" id="name" name="name" type="number" />
+            <label class="input-label" for="age">Book Year:</label>
+            <input placeholder="Enter Book Year" required pattern="[A-Za-z]{3,30}"
+            title="Enter Book Year" class="input" id="name" name="name" type="number" />
+            
+           
+           
+           
+           
+            <input class="input" id="submit" type="submit" value="Add" />
+        </form>
+    </section>
+
+
+
+    <script type="text/javascript" src="../js/index.js"></script>
+
+</body>
+
+</html>
