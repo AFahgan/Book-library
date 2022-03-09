@@ -1,6 +1,4 @@
-/* eslint-disable no-trailing-spaces */
 /* eslint-disable no-undef */
-
 const deleteBook = (id) => fetch(`/deletebook/${id}`, {
   method: 'DELETE',
   headers: {
@@ -26,7 +24,6 @@ fetch('/mybooks')
       const addedDate = document.createElement('td');
       addedDate.textContent = book.added_date;
       row.appendChild(addedDate);
-      
       const Btn = document.createElement('button');
       Btn.textContent = 'Delete Book';
       Btn.classList.add('btn');
