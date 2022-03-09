@@ -19,6 +19,37 @@ fetch('/getBook')
       bookdiv.appendChild(bookName);
       const bookA = document.createElement('a');
       bookA.href = './addbook.html';
+
+      const author = document.createElement('p');
+      author.textContent = 'Author: ';
+      const authorData = document.createElement('span');
+      authorData.textContent = book.author;
+      author.appendChild(authorData);
+      bookdiv.appendChild(author);
+
+
+      const publisher = document.createElement('p');
+      publisher.textContent = 'Author: ';
+      const publisherData = document.createElement('span');
+      publisherData.textContent = book.publisher;
+      publisher.appendChild(publisherData);
+      bookdiv.appendChild(publisher);
+
+      const ISBN = document.createElement('p');
+      ISBN.textContent = 'ISBN: ';
+      const ISBNData = document.createElement('span');
+      ISBNData.classList.add('ISBN');
+      ISBNData.textContent = book.isbn;
+      ISBN.appendChild(ISBNData);
+      bookdiv.appendChild(ISBN);
+      
+      const relaseDate = document.createElement('p');
+      relaseDate.textContent = 'Release Date: ';
+      const releaseDateData = document.createElement('span');
+      releaseDateData.textContent = book.year;
+      relaseDate.appendChild(releaseDateData);
+      bookdiv.appendChild(relaseDate);
+
       const bookBtn = document.createElement('button');
       bookBtn.classList.add('book-btn');
       bookA.appendChild(bookBtn);

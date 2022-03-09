@@ -15,7 +15,7 @@ CREATE TABLE books (
 INSERT INTO books (name, author, publisher, cover, isbn, year) VALUES
 ('Ecce Homo', 'Friedrich Nietzsche', 'Henry van de Velde',
  'img',
- '978-0140445152',
+ '059',
  1908
  );
 
