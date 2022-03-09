@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable camelcase */
 /* eslint-disable no-undef */
 
 const addMyBook = (Added_Date, cover, book_id) => fetch(`/addMyBook/${Added_Date}`, {
