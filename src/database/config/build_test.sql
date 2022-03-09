@@ -24,6 +24,7 @@ CREATE TABLE mybooks (
     Added_Date VARCHAR(255) NOT NULL,
     cover VARCHAR(255) NOT NULL,
 
+
   "book_id" int NOT NULL REFERENCES "books" ("id")
 );
 

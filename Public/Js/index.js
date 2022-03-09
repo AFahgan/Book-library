@@ -1,4 +1,13 @@
 /* eslint-disable no-undef */
+
+const addMyBook = (Added_Date, cover, book_id) => fetch(`/addMyBook/${Added_Date}`, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  redirect: 'follow',
+});
+
 fetch('/getBook')
   .then((res) => res.json())
   .then((books) => {
@@ -18,7 +27,6 @@ fetch('/getBook')
       bookName.textContent = book.name;
       bookdiv.appendChild(bookName);
       const bookA = document.createElement('a');
-      bookA.href = './addbook.html';
 
       const author = document.createElement('p');
       author.textContent = 'Author: ';
@@ -48,9 +56,14 @@ fetch('/getBook')
       releaseDateData.textContent = book.year;
       relaseDate.appendChild(releaseDateData);
       bookdiv.appendChild(relaseDate);
-
       const bookBtn = document.createElement('button');
       bookBtn.classList.add('book-btn');
+      bookBtn.onclick = () => {
+        // eslint-disable-next-line no-console
+ console.log(book.Added_Date)
+        // addMyBook(book.Added_Date)
+        //   .then(window.location.assign('../mybooks.html'));
+      };
       bookA.appendChild(bookBtn);
       bookdiv.appendChild(bookA);
     });

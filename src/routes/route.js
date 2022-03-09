@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const {
-  addBook, getbook, deleteBook, getmyBook,
+  addBook, getbook, deleteBook, getmyBook, addMyBook,
 } = require('../controllers');
 const {
   clientError,
@@ -8,6 +8,7 @@ const {
 } = require('../controllers/error');
 
 router.post('/addbook', addBook);
+router.post('/addMyBook', addMyBook);
 router.get('/getbook', getbook);
 router.get('/mybooks', getmyBook);
 router.delete('/deletebook/:id', deleteBook);
