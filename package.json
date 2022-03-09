@@ -23,7 +23,7 @@
   "scripts": {
     "test": "jest",
 
-    "start": "node src/index.js",
+    "start": "NODE_ENV=production node src/index.js",
     "dev": "nodemon src/index.js"
   },
   "repository": {
