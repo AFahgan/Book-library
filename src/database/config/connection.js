@@ -17,7 +17,9 @@ if (!URL_DATABASE) {
 
 const connection = new Pool({
   connectionString: URL_DATABASE,
-  ssl: false,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 module.exports = connection;
