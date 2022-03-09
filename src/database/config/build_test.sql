@@ -22,11 +22,13 @@ INSERT INTO books (name, author, publisher, cover, isbn, year) VALUES
 CREATE TABLE mybooks (
     id SERIAL PRIMARY KEY,
     Added_Date VARCHAR(255) NOT NULL,
+    cover VARCHAR(255) NOT NULL,
+
   "book_id" int NOT NULL REFERENCES "books" ("id")
 );
 
-INSERT INTO mybooks (Added_Date,"book_id") VALUES
-('10/03/2022' ,2);
+INSERT INTO mybooks (Added_Date,cover,"book_id") VALUES
+('10/03/2022', 'https://pbs.twimg.com/media/DsO5PtWWoAA90mF.jpg',1);
 
 
 
