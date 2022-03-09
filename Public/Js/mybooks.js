@@ -28,6 +28,7 @@ fetch('/mybooks')
       Btn.textContent = 'Delete Book';
       Btn.classList.add('btn');
       Btn.onclick = () => {
+        // eslint-disable-next-line no-console
         console.log(book.book_id);
         deleteBook(book.id)
           .then(window.location.assign('../mybooks.html'));

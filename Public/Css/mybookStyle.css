@@ -123,35 +123,29 @@ table, th, td {
   text-align: center;
   border-collapse: collapse;
   border-radius: 1em;
+  overflow: hidden;
   
 }
 
 th {
   color: #5708d6;
   border-bottom: 1px solid lightgrey;
-  text-align: center;
-
 }
 
+.img {
+  width: 50px;
+}
 #mybooks-table {
   border-collapse: collapse;
   width: 100%;
-  text-align: center;
-
 }
 
 .table-container {
   width: 50%;
   margin: 0 auto;
   margin-top: 13%;
-  text-align: center;
-
 }
 
 tr {
   height: 35px;
-}
-.img{
-  height: inherit;
-  margin-top: 20px;
 }
