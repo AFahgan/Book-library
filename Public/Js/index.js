@@ -27,7 +27,6 @@ fetch('/getBook')
       author.appendChild(authorData);
       bookdiv.appendChild(author);
 
-
       const publisher = document.createElement('p');
       publisher.textContent = 'Author: ';
       const publisherData = document.createElement('span');
@@ -54,5 +53,6 @@ fetch('/getBook')
       bookBtn.classList.add('book-btn');
       bookA.appendChild(bookBtn);
       bookdiv.appendChild(bookA);
+
     });
   });
