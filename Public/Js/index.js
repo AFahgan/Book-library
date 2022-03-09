@@ -19,9 +19,19 @@ fetch('/getBook')
       bookdiv.appendChild(bookName);
       const bookA = document.createElement('a');
       bookA.href = './addbook.html';
-      const bookBtn = document.createElement('button');
-      bookBtn.classList.add('book-btn');
-      bookA.appendChild(bookBtn);
-      bookdiv.appendChild(bookA);
+
+      const author = document.createElement('p');
+      author.textContent = 'Author: ';
+      const authorData = document.createElement('span');
+      authorData.textContent = book.author;
+      author.appendChild(authorData);
+      bookdiv.appendChild(author);
+
+      const publisher2 = document.createElement('p');
+      publisher2.textContent = 'Publisher: ';
+      const publisherData = document.createElement('span');
+      publisherData.textContent = book.isbn;
+      publisher2.appendChild(publisherData);
+      bookdiv.appendChild(publisher2);
     });
   });
