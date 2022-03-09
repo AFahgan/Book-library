@@ -3,7 +3,9 @@ require('env2')('config.env');
 
 let URL_DATABASE = '';
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'test') {
+  URL_DATABASE = process.env.DB_URL_TEST;
+} else if (process.env.NODE_ENV === 'production') {
   URL_DATABASE = process.env.DATABASE_URL;
 } else {
   URL_DATABASE = process.env.DB_URL;
