@@ -4,9 +4,9 @@ const router = require('./routes/route');
 
 const app = express();
 
-app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(join(__dirname, '../public')));
+app.use(express.json());
+app.use(express.static(join(__dirname, '..', 'Public')));
 app.set('port', process.env.PORT || 8000);
 app.use(router);
 

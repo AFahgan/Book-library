@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable camelcase */
 /* eslint-disable no-undef */
 
 const addMyBook = (Added_Date, cover, book_id) => fetch(`/addMyBook/${Added_Date}`, {
@@ -60,9 +62,9 @@ fetch('/getBook')
       bookBtn.classList.add('book-btn');
       bookBtn.onclick = () => {
         // eslint-disable-next-line no-console
- console.log(book.Added_Date)
-        // addMyBook(book.Added_Date)
-        //   .then(window.location.assign('../mybooks.html'));
+        console.log(book.Added_Date);
+        addMyBook(book.Added_Date)
+          .then(window.location.assign('../mybooks.html'));
       };
       bookA.appendChild(bookBtn);
       bookdiv.appendChild(bookA);
