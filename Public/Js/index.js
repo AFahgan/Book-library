@@ -41,7 +41,7 @@ fetch('/getBook')
       ISBNData.textContent = book.isbn;
       ISBN.appendChild(ISBNData);
       bookdiv.appendChild(ISBN);
-      
+
       const relaseDate = document.createElement('p');
       relaseDate.textContent = 'Release Date: ';
       const releaseDateData = document.createElement('span');
@@ -53,6 +53,5 @@ fetch('/getBook')
       bookBtn.classList.add('book-btn');
       bookA.appendChild(bookBtn);
       bookdiv.appendChild(bookA);
-
     });
   });
