@@ -28,7 +28,10 @@ Book Library is a Web-based services that collect a lot of books on our database
 
 ## ✧ <span id='Journey'>User Journey</span>
 
-
+- The user will open the home page and browse through available books and when they see a book they like they can add it to their library by pressing add to library button .
+- Then they will be redirected to My books page where all of their added books are.
+- And They can delete the book they just added.
+- The user can navigate through the pages of the website.
 ## ✧ <span id='stories'>User Stories</span>
 
 - As a user, I want to add a new books.
