@@ -10,6 +10,14 @@ const addMyBook = (Added_Date, cover, book_id) => fetch(`/addMyBook/${Added_Date
   redirect: 'follow',
 });
 
+const deletemybook = (id) => fetch(`/deletemybook/${id}`, {
+  method: 'DELETE',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  redirect: 'follow',
+});
+
 fetch('/getBook')
   .then((res) => res.json())
   .then((books) => {
@@ -29,7 +37,7 @@ fetch('/getBook')
       bookName.textContent = book.name;
       bookdiv.appendChild(bookName);
       const bookA = document.createElement('a');
-
+      const bookA2 = document.createElement('a');
       const author = document.createElement('p');
       author.textContent = 'Author: ';
       const authorData = document.createElement('span');
@@ -38,7 +46,7 @@ fetch('/getBook')
       bookdiv.appendChild(author);
 
       const publisher = document.createElement('p');
-      publisher.textContent = 'Author: ';
+      publisher.textContent = 'Publisher: ';
       const publisherData = document.createElement('span');
       publisherData.textContent = book.publisher;
       publisher.appendChild(publisherData);
@@ -60,6 +68,8 @@ fetch('/getBook')
       bookdiv.appendChild(relaseDate);
       const bookBtn = document.createElement('button');
       bookBtn.classList.add('book-btn');
+      bookBtn.textContent = 'Add To My Books';
+
       bookBtn.onclick = () => {
         // eslint-disable-next-line no-console
         console.log(book.Added_Date);
@@ -68,5 +78,18 @@ fetch('/getBook')
       };
       bookA.appendChild(bookBtn);
       bookdiv.appendChild(bookA);
+
+      const bookBtn2 = document.createElement('button');
+
+      bookBtn2.classList.add('delete-btn');
+      bookBtn2.textContent = 'Delete Book';
+
+      bookBtn2.onclick = () => {
+        // console.log(book.id);
+        deletemybook(book.id)
+          .then(window.location.assign('../index.html'));
+      };
+      bookA2.appendChild(bookBtn2);
+      bookdiv.appendChild(bookA2);
     });
   });
