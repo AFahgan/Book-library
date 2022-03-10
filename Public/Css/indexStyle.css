@@ -151,19 +151,35 @@ nav {
   transition: all 0.5s ease-in-out;
 }
 
-.book button {
+.book-btn {
   position: absolute;
   top: 29%;
-  left: 27%;
+  left: 30%;
   width: 10rem;
   height: 3rem;
   background-color: black;
   color: white;
   border-radius: 3px;
   font-weight: bold;
+  text-align: center;
   font-size: 1.3rem;
   border: none;
 }
+.delete-btn {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 10rem;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3rem;
+  border: none;
+}
+
 .book a {
   display: none;
 }
@@ -199,4 +215,11 @@ nav {
     margin-top: 100px;
     width: 30%;
   }
+}
+p{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.headerimg{
+  height: 200px;
 }
