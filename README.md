@@ -5,6 +5,7 @@
 - [Links](#Links)
 - [User Journey](#Journey)
 - [User stories](#stories)
+- [Schema](#Schema)
 - [Technologies](#Technology)
 - [Setup](#setup)
 - [Installation](#install)
@@ -38,6 +39,10 @@ Book Library is a Web-based services that collect a lot of books on our database
 - As a user, I want to be able to delete any book.
 - As a user, I want to be able to add book to my library. 
 
+
+## ✧ <span id='Schema'>Schema</span>
+
+![](https://i.ibb.co/x8DCNVm/unknown.png)
 
 ## ✧ <span id='Technology'>Technology and Tools that we used</span>
 
